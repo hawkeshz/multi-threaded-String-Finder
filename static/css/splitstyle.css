@@ -1,0 +1,84 @@
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: black;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.nodebox {
+  border: solid 2px white;
+  border-radius: 10px;
+  height:85px;
+  margin: 10px;
+}
+
+.nodebox:hover {
+  box-shadow: 5px 5px 3px #666;
+}
+
+.nodeicon {
+  margin-left: 5px;
+  margin-top: 16px;
+}
+.nodeicon img{
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+.nodeinfo {
+  color: white;
+  padding-left: 50px;
+  margin-left: 20px;
+}
+.nodeinfo h2 {
+  margin-left: 80px
+  color: white;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.nodeinfo h5 {
+  margin-top: -15px;
+}
+
+.chunkfiles {
+  color: #22e122;
+}
+
+.nonode {
+  color: red;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 200px;
+}
